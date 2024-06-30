@@ -1,4 +1,3 @@
-
 -- set leader key to space
 vim.g.mapleader = " "
 
@@ -31,3 +30,9 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+
+-- markdown-preview keymaps
+-- cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+keymap.set("n", "<leader>mt", "<cmd>MarkdownPreviewToggle<CR>", { desc = "" })
+-- keymap.set("n", "<leader>mp", "<cmd>MarkdownPreview<CR>", { desc = "" })
+-- keymap.set("n", "<leader>ms", "<cmd>MarkdownPreviewStop<CR>", { desc = "" })
